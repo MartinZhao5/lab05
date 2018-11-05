@@ -51,8 +51,15 @@ else{
 double IntList::average() const {
     if (first==0)
 	return 0;
- else{ int average= sum()/count();
-	return average;
+ else{ double sum=0;
+       double count=0;
+ Node *n = first;
+      while (n) {
+         sum+=n->info;
+	count++;
+         n = n->next;
+}
+ return sum/count;
 }
 	 // REPLACE THIS NON-SOLUTION
 }
