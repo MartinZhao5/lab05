@@ -51,8 +51,8 @@ else{
 double IntList::average() const {
     if (first==0)
 	return 0;
- else{
-	return (sum()/count());
+ else{ double average= sum()/count();
+	return average;
 }
 	 // REPLACE THIS NON-SOLUTION
 }
